@@ -1,0 +1,436 @@
+@363: #363636;
+@baseColor: #3089d5;
+@gray3: #d7d7d7;
+@baseColorLight2: #83b8e6;
+@f60: #f60;
+@fdc: #ffd1c2;
+@white: #fff; //纯白色
+@fontColor: #0e293f;
+@blackOpa2: rgba(0, 0, 0, 0.2);
+@gray4: #f2f2f2;
+@black: #000;
+/****blog in seting***/
+//blog管理排序方式设置;
+
+div.zm-blog-content {
+    position: relative;
+    .zm-dialog-sortord {
+        width: 286px;
+        box-sizing: border-box;
+        padding: 0 15px;
+        min-height: 55px;
+        font-size: 12px;
+        position: relative;
+        color: #797979;
+        .zm-dialog-Icon-title {
+            width: 65px;
+            text-align: left;
+            margin: 0;
+            vertical-align: middle;
+            padding-right: 9px;
+            display: inline-block;
+            line-height: 55px;
+        }
+        .zm-dialog-Icon {
+            position: relative;
+            box-sizing: border-box;
+            float: right;
+            top: 10px;
+            padding: 0 15px;
+            width: 176px;
+            height: 30px;
+            line-height: 28px;
+            border-radius: 3px;
+            border: 1px solid #bcbcbc;
+            outline: none;
+            cursor: pointer;
+            vertical-align: middle;
+            span.number {
+                color: #797979;
+            }
+            .icon_triangle {
+                font-style: normal;
+                float: right;
+                color: @gray3;
+            }
+        }
+        .zmicon_hover,
+        .zm-dialog-Icon:hover {
+            // border: 1px solid @baseColor;
+            // box-shadow: 0 0 10px @baseColor;
+            span.number {
+                // color: @baseColor;
+            }
+            .icon_triangle {
+                // color: @baseColor;
+            }
+        }
+        ul.zm-dialog-random {
+            position: absolute;
+            top: 44px;
+            left: 96px;
+            z-index: 1000;
+            box-sizing: border-box;
+            width: 175px;
+            background: @white;
+            color: @363;
+            box-shadow: 0 0 5px @gray3;
+            border-radius: 3px;
+            margin: 0;
+            padding: 0;
+            li {
+                list-style: none;
+                height: 30px;
+                line-height: 30px;
+                padding: 0 15px;
+                span {
+                    color: #797979;
+                }
+            }
+            li:hover {
+                background-color: #eff6fc;
+            }
+        }
+    }
+    //blog管理内容ul,li设置;
+    .zm-dialog-pageBox {
+        width: 286px;
+        height: 580px;
+        position: relative;
+        .easy-scrollbar__wrap,
+        .easy-scrollbar__wrap--hidden-default {
+            height: 598px;
+        }
+        .zm-dialog-pageList {
+            margin: 0;
+            padding: 0;
+            li {
+                height: 40px;
+                line-height: 40px;
+                list-style: none;
+                position: relative;
+                font-size: 12px;
+                color: #797979;
+                cursor: pointer;
+                span {
+                    display: none;
+                }
+                .zm-dialog-serialNumber {
+                    float: left;
+                    line-height: 36px;
+                    font-style: italic;
+                    margin-left: 10px;
+                    width: 14px;
+                    display: block;
+                }
+                .zm-dialog-Title {
+                    float: left;
+                    height: 26px;
+                    line-height: 26px;
+                    width: 182px;
+                    border-radius: 3px;
+                    cursor: pointer;
+                    margin: 0 14px 0 10px;
+                    .zm-dialog-pageList-title {
+                        width: 100%;
+                        outline: none;
+                        height: 26px;
+                        line-height: 26px;
+                        box-sizing: border-box;
+                        padding: 0 0px 0 6px;
+                        text-overflow: ellipsis;
+                        background-color: transparent;
+                        border: 1px solid transparent;
+                        margin: 6px 0 0;
+                        font-size: 12px;
+                        color: #797979;
+                    }
+                    .zm-boxShow {
+                        display: inline-block;
+                        width: 185px;
+                        height: 40px;
+                        background-color: transparent;
+                        position: absolute;
+                        top: 0px;
+                        left: 30px;
+                    }
+                }
+                .onFocus {
+                    // border: 1px solid @baseColor;
+                    // box-shadow: 0 0 5px @baseColor;
+                }
+                .onError {
+                    box-shadow: 0 0 5px #f30;
+                    border: 1px solid #f30;
+                }
+                .zm-dialog-eye {
+                    font-size: 12px;
+                    // color: @baseColor;
+                    float: left;
+                    line-height: 37px;
+                }
+                .zm-dialog-setting {
+                    // color: @baseColor;
+                    font-size: 18px;
+                    float: left;
+                    line-height: 37px;
+                    margin-left: 7px;
+                }
+                .icon-cha2 {
+                    font-size: 18px;
+                }
+                .icon-eyeOff {
+                    font-size: 18.66px;
+                    color: @gray3;
+                }
+                .icon-duigou1,
+                .icon-cha2 {
+                    // color: @baseColorLight2;
+                }
+                .icon-duigou1:hover,
+                .icon-cha2:hover {
+                    // color: @baseColor;
+                }
+                span.setKey {
+                    // color: @baseColor;
+                }
+                .zm-dialog-blogNameError {
+                    position: absolute;
+                    font-size: 14px;
+                    right: 76px;
+                    height: 15px;
+                    line-height: 15px;
+                    top: 12px;
+                    color: #f30;
+                }
+                .zm-dialog-blogNameErrorText {
+                    width: 223px;
+                    height: 30px;
+                    line-height: 30px;
+                    padding-left: 8px;
+                    background-color: @fdc;
+                    color: @fontColor;
+                    font-size: 12px;
+                    position: absolute;
+                    left: 1px;
+                    top: 36px;
+                    border: 1px solid @f60;
+                    border-radius: 2px;
+                    z-index: 35;
+                }
+                .zm-dialog-blogNameErrorText:before {
+                    content: "";
+                    display: block;
+                    width: 0;
+                    height: 0;
+                    box-sizing: border-box;
+                    border-left: 9px solid transparent;
+                    border-right: 9px solid transparent;
+                    border-bottom: 9px solid @fdc;
+                    position: absolute;
+                    top: -9px;
+                    right: 11px;
+                    z-index: 33;
+                }
+                .zm-dialog-blogNameErrorText:after {
+                    content: "";
+                    display: block;
+                    width: 0;
+                    height: 0;
+                    box-sizing: border-box;
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                    border-bottom: 10px solid @f60;
+                    position: absolute;
+                    top: -10px;
+                    right: 10px;
+                }
+                .zm-dialog-blogReNameError {
+                    width: 84px;
+                    height: 30px;
+                    line-height: 30px;
+                    padding-left: 8px;
+                    background-color: @fdc;
+                    color: @fontColor;
+                    font-size: 12px;
+                    position: absolute;
+                    left: 182px;
+                    top: 36px;
+                    border: 1px solid @f60;
+                    border-radius: 2px;
+                    z-index: 35;
+                }
+                .zm-dialog-blogReNameError:before {
+                    content: "";
+                    display: block;
+                    width: 0;
+                    height: 0;
+                    box-sizing: border-box;
+                    border-left: 9px solid transparent;
+                    border-right: 9px solid transparent;
+                    border-bottom: 9px solid @fdc;
+                    position: absolute;
+                    top: -9px;
+                    right: 53px;
+                    z-index: 33;
+                }
+                .zm-dialog-blogReNameError:after {
+                    content: "";
+                    display: block;
+                    width: 0;
+                    height: 0;
+                    box-sizing: border-box;
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                    border-bottom: 10px solid @f60;
+                    position: absolute;
+                    top: -10px;
+                    right: 52px;
+                }
+            }
+            .onlay {
+                background-color: #eff6fc;
+                span {
+                    display: block;
+                }
+            }
+            .wrong {
+                span {
+                    display: block;
+                }
+            }
+            .onlayclick {
+                background-color: #eff6fc;
+                span {
+                    display: block;
+                }
+            }
+            .zm-dialog-pageList-one{
+                .zm-eyeoff {
+                    display: inline-block;
+                    float: left;
+                    line-height: 37px;
+                    color: #d7d7d7;
+                    }
+            }
+        }
+    }
+    .zm-blog-noAssign {
+        display: table;
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+        height: 580px;
+        i {
+            display: inline-block;
+            width: 121px;
+            display: inline-block;
+            vertical-align: middle;
+            height: 126px;
+            background: url("../../../../../static/img/1011097558381081149.png")
+                no-repeat center;
+        }
+        p {
+            width: 100%;
+            text-align: center;
+            font: 900 14px "微软雅黑";
+            padding-top: 10px;
+            display: inline-block;
+            vertical-align: middle;
+            height: 60px;
+            color: #bcbcbc;
+        }
+    }
+    .zm-blog-newList {
+        width: 100%;
+        height: 580px;
+        display: table;
+        padding-left: 12px;
+        position: relative;
+        padding-top: 10px;
+        span {
+            font-size: 36px;
+            display: inline-block;
+            color: #f90;
+            margin-right: 10px;
+        }
+        p {
+            width: 186px;
+            display: inline-block;
+            font: normal 12px "微软雅黑";
+            color: #949494;
+            height: 39px;
+            line-height: 39px;
+            vertical-align: bottom;
+        }
+    }
+    .zm-blog-newList::before{
+        content: "";
+        display: block;
+        width: 256px;
+        height: 1px;
+        position: absolute;
+        left: 15px;
+        top:0px;
+        background-color: #f2f2f2;
+    }
+    //选择博客设置;
+    .zm-dialog-check {
+        width: 286px;
+        height: 50px;
+        border-top: 1px solid @gray3;
+        padding-top: 10px;
+        box-sizing: border-box;
+        box-shadow: 0 0 5px @blackOpa2;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        background: linear-gradient(@white, @gray4);
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+        .zm-dialog-check-button {
+            display: inline-block;
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+            color: @white;
+            // background-color: @baseColor;
+        }
+        .zm-dialog-check-button:hover {
+            cursor: pointer;
+        }
+        .zm-dialog-checkBack {
+            background-color: #d7d7d7 !important;
+        }
+    }
+    .zm-dialog-carousel-pageSetBox {
+        position: fixed;
+        box-shadow: 0 0 5px @gray3;
+        width: 176px;
+        left: 305px;
+        border-radius: 5px;
+        > div {
+            width: 100%;
+            height: 30px;
+            box-sizing: border-box;
+            font-size: 12px;
+            line-height: 30px;
+            padding-left: 30px;
+            background-color: @white;
+            cursor: pointer;
+            color: #797979;
+        }
+        > div:hover {
+            background-color: #eff6fc;
+        }
+        > div:nth-child(1) {
+            border-radius: 5px 5px 0 0;
+        }
+        > div:last-child {
+            border-radius: 0 0 5px 5px;
+        }
+    }
+}

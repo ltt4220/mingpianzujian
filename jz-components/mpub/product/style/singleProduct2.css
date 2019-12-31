@@ -1,0 +1,104 @@
+.zm-component-product-imgX {
+    /* width: 437px;
+height: 150px; */
+    background-color: #97C4EA;
+    /* cursor: pointer; */
+}
+
+.zm-component-product-imgX .zm-component-product-img {
+    width: auto;
+    height: auto;
+    /* background-size: cover; */
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    float: left;
+    cursor: pointer;
+}
+
+.zm-component-product-imgX .zm-component-product-img img {
+    width: auto;
+    /* height: 150px; */
+    /* object-fit: cover; */
+    user-select: none;
+}
+
+.zm-component-product-imgX .zm-component-product-title {
+    /* width: 170px;
+height: 150px; */
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
+    box-sizing: border-box;
+    position: relative;
+    font-size: 14px;
+    font-weight: bold;
+    float: left;
+}
+
+.zm-component-product-imgX .zm-component-product-title .zm-component-product-title-text {
+    word-break: break-all;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* display: -webkit-box; */
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    cursor: pointer;
+    transform: translate3d(0, 0, 0);
+
+}
+
+.zm-component-product-imgX .zm-component-product-title .zm-component-product-title-type {
+    color: #fff;
+    /* margin-top: 8px; */
+    /* margin-bottom: 8px; */
+    word-break: break-all;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* display: -webkit-box; */
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.zm-component-product-imgX .zm-component-product-title .zm-component-product-title-line {
+    background-color: #fff;
+    width: 90%;
+    height: 1px;
+}
+
+.zm-component-product-imgX .zm-component-product-title .zm-component-product-title-price {
+    /* margin-top: 5px; */
+    color: darkred;
+    font-weight: 600;
+    /* word-break: break-all; */
+    /* word-wrap: break-word; */
+    /* overflow : hidden; */
+    text-overflow: ellipsis;
+    /* display: -webkit-box; */
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.zm-component-product-imgX .zm-component-product-title .zm-component-product-title-details {
+    width: 100%;
+    /* height: 20px; */
+    text-align: center;
+    text-align: -webkit-center;
+    line-height: 20px;
+    color: #ffffff;
+    /* margin-top: 10px; */
+    font-weight: 500;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.zm-component-product-imgX .zm-component-product-title .zm-component-product-title-details span {
+    display: inline-block;
+    height: 100%;
+    width: 45%;
+    background-color: #3089D5;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* //商品轮播图片悬浮效果=======end */

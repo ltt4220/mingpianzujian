@@ -1,0 +1,850 @@
+@363: #363636;
+@baseColor: #3089d5;
+@gray3: #d7d7d7;
+@baseColorLight2: #83b8e6;
+@baseColorLight3: #97c4ea;
+@baseColorLight4: #d6e7f7; //he
+@f60: #f60;
+@fdc: #ffd1c2;
+@white: #fff; //纯白色
+@black: #000;
+@fontColor: #0e293f;
+@blackOpa2: rgba(107, 88, 88, 0.2);
+@gray4: #f2f2f2;
+/****product in seting***/
+//product管理排序方式设置;
+.zm-product-content {
+    position: relative;
+    font-size: 12px;
+    .zm-dialog-sortord {
+        width: 250px;
+        box-sizing: border-box;
+        min-height: 40px;
+        font-size: 12px;
+        position: relative;
+        text-align: left;
+        margin-left: 18px;
+        color: #797979;
+        .zm-dialog-Icon-title {
+            width: 65px;
+            text-align: left;
+            margin: 0;
+            vertical-align: middle;
+            display: inline-block;
+            line-height: 48px;
+        }
+        .zm-dialog-Icon {
+            position: relative;
+            box-sizing: border-box;
+            float: right;
+            top: 10px;
+            padding: 0 15px;
+            width: 176px;
+            height: 30px;
+            line-height: 28px;
+            border-radius: 3px;
+            border: 1px solid @gray3;
+            outline: none;
+            cursor: pointer;
+            vertical-align: middle;
+            .icon_triangle {
+                font-style: normal;
+                float: right;
+                color: @gray3;
+            }
+        }
+        .zmicon_hover,.zm-dialog-Icon:hover {
+            // border: 1px solid @baseColor;
+            // box-shadow: 0 0 5px @baseColor;
+            span.number {
+                // color: @baseColor;
+            }
+            .icon_triangle {
+                // color: @baseColor;
+            }
+        }
+        ul.zm-dialog-random {
+            position: absolute;
+            top: 44px;
+            left: 75px;
+            z-index: 1000;
+            box-sizing: border-box;
+            width: 175px;
+            background: @white;
+            color: #797979;
+            box-shadow: 0 0 5px @gray3;
+            border-radius: 3px;
+            margin: 0;
+            padding: 0;
+            li {
+                list-style: none;
+                height: 30px;
+                line-height: 30px;
+                padding: 0 15px;
+                span {
+                    // color: @baseColor;
+                }
+            }
+            li:hover {
+                background-color: #eff6fc;
+            }
+        }
+    }
+    .zm-dialog-productType {
+        border-top: 1px solid @gray4;
+        border-bottom: 1px solid @gray4;
+    }
+    //product管理内容ul,li设置;
+    .zm-dialog-pageBox {
+        width: 286px;
+        height: 638px;
+        position: relative;
+        .zm-dialog-pageList {
+            margin: 0;
+            padding: 0;
+            li {
+                min-height: 40px;
+                line-height: 40px;
+                list-style: none;
+                position: relative;
+                cursor: pointer;
+                color: #797979;
+                .zm-product-list {
+                    width: 100%;
+                    i {
+                        text-align: center;
+                        border-radius: 3px;
+                        color: white;
+                        background-color: @gray3;
+                        margin-right: 2px;
+                    }
+                    .zm-icon-toggle:hover {
+                        background-color: #797979;
+                    }
+                    .icon-check {
+                        color: @white;
+                        font-size: 12px;
+                        background-color: @white;
+                        border: 1px solid @gray3;
+                    }
+                    .icon-check:hover {
+                        // border: 1px solid @baseColor;
+                        // box-shadow: 0 0 5px @baseColor;
+                    }
+                    .duigouBox {
+                        border: 1px solid transparent;
+                        // background-color: @baseColor;
+                    }
+                }
+                > div:hover {
+                    background-color: #dfecf8;
+                }
+            }
+        }
+        .zm-product-err {
+            display: table;
+            width: 100%;
+            text-align: center;
+            padding-top: 20px;
+            height: 588px;
+            i {
+                display: inline-block;
+                width: 121px;
+                display: inline-block;
+                vertical-align: middle;
+                height: 126px;
+                background: url("../../../../../static/img/1011097558381081149.png")
+                    no-repeat center;
+            }
+            p {
+                width: 100%;
+                text-align: center;
+                font: 900 14px "微软雅黑";
+                // color: @baseColor;
+            }
+            p:nth-of-type(1) {
+                padding-top: 10px;
+                display: inline-block;
+                vertical-align: middle;
+                height: 60px;
+                color: #bcbcbc;
+            }
+            p:nth-child(3) {
+                line-height: 48px;
+                text-indent: 4px;
+            }
+            p:last-child {
+                font-size: 40px;
+                margin-bottom: 6px;
+            }
+        }
+        .zm-product-newErr {
+            padding: 24px;
+            span {
+                font-size: 36px;
+                display: inline-block;
+                color: #f90;
+                margin-right: 10px;
+            }
+            p {
+                width: 186px;
+                display: inline-block;
+                font: normal 12px "微软雅黑";
+                color: #949494;
+                height: 39px;
+                line-height: 39px;
+                vertical-align: bottom;
+            }
+            .zm-product-News-content {
+                position: relative;
+                border-top: 1px solid #f2f2f2;
+                // display: block !important;
+                //blog管理内容ul,li设置;
+                .zm-product-pageBox {
+                    width: 286px;
+                    height: 594px;
+                    position: relative;
+                    top: 10px;
+                    .easy-scrollbar__wrap,
+                    .easy-scrollbar__wrap--hidden-default {
+                        height: 594px;
+                    }
+                    .zm-dialog-pageListNew {
+                        margin: 0;
+                        padding: 0;
+                        li {
+                            width: 286px;
+                            height: 60px;
+                            line-height: 60px;
+                            list-style: none;
+                            position: relative;
+                            border-bottom: 1px solid #f2f2f2;
+                            cursor: pointer;
+                            color: #797979;
+                            span {
+                                display: none;
+                            }
+                            .zm-index {
+                                position: absolute;
+                                left: 11px;
+                                top: 0px;
+                                font-size: 12px;
+                                font-style: italic;
+                                color: #797979;
+                            }
+                            .zm-dialog-serialNumber {
+                                float: left;
+                                height: 50px;
+                                font-style: italic;
+                                margin-left: 33px;
+                                width: 50px;
+                                margin-top: 5px;
+                                display: block;
+                                background-size: cover;
+                            }
+                            .zm-dialog-Title {
+                                float: left;
+                                height: 50px;
+                                width: 135px;
+                                border-radius: 3px;
+                                cursor: pointer;
+                                margin: 5px 5px 0 10px !important;
+                                .zm-dialog-pageList-title {
+                                    width: 100%;
+                                    outline: none;
+                                    height: 50px;
+                                    line-height: 1.4em !important;
+                                    box-sizing: border-box;
+                                    padding: 0 24px 0 6px;
+                                    text-overflow: ellipsis;
+                                    background-color: transparent;
+                                    border: 1px solid transparent;
+                                    color: #797979;
+                                    resize: none;
+                                    margin: 0 !important;
+                                    overflow: hidden;
+                                    word-break: break-all;
+                                    word-wrap: break-word;
+                                    font-size: 12px;
+                                    // overflow-x:hidden;//水平方向内容溢出时的设置
+                                    // overflow-y:hidden;//垂直方向内容溢出时的设置
+                                }
+                                .zm-boxShow {
+                                    display: inline-block;
+                                    width: 185px;
+                                    height: 40px;
+                                    background-color: transparent;
+                                    position: absolute;
+                                    top: 0px;
+                                    left: 30px;
+                                }
+                            }
+                            .onFocus {
+                                // border: 1px solid @baseColor;
+                                // box-shadow: 0 0 5px @baseColor;
+                            }
+                            .onError {
+                                box-shadow: 0 0 5px @f60;
+                                border: 1px solid @f60;
+                            }
+                            .zm-dialog-eye {
+                                font-size: 12px;
+                                // color: @baseColor;
+                                float: left;
+                                line-height: 60px;
+                            }
+                            .zm-dialog-setting {
+                                // color: @baseColor;
+                                font-size: 18px;
+                                float: left;
+                                line-height: 60px;
+                                margin-left: 7px;
+                            }
+                            .icon-cha2 {
+                                font-size: 18px;
+                            }
+                            .icon-eyeOff {
+                                font-size: 18.66px;
+                                color: @gray3;
+                            }
+                            .icon-duigou1,
+                            .icon-cha2 {
+                                // color: @baseColorLight2;
+                            }
+                            .icon-duigou1:hover,
+                            .icon-cha2:hover {
+                                // color: @baseColor;
+                            }
+                            span.setKey {
+                                // color: @baseColor;
+                            }
+                            .zm-dialog-nameError {
+                                //警告；
+                                position: absolute;
+                                font-size: 12px;
+                                right: 68px;
+                                color: @f60;
+                                top:12px;
+                            }
+                            .zm-dialog-nameErrorText {
+                                //长错误；
+                                width: 223px;
+                                height: 30px;
+                                line-height: 30px;
+                                padding-left: 8px;
+                                background-color: @fdc;
+                                color: @fontColor;
+                                font-size: 12px;
+                                position: absolute;
+                                left: 2px;
+                                top: 60px;
+                                border: 1px solid @f60;
+                                border-radius: 2px;
+                                z-index: 35;
+                                > i {
+                                    font-style: normal;
+                                    color: #9900cc;
+                                }
+                            }
+                            .zm-dialog-nameErrorText:before {
+                                content: "";
+                                display: block;
+                                width: 0;
+                                height: 0;
+                                box-sizing: border-box;
+                                border-left: 9px solid transparent;
+                                border-right: 9px solid transparent;
+                                border-bottom: 9px solid @fdc;
+                                position: absolute;
+                                top: -9px;
+                                right: 3px;
+                                z-index: 33;
+                            }
+                            .zm-dialog-nameErrorText:after {
+                                content: "";
+                                display: block;
+                                width: 0;
+                                height: 0;
+                                box-sizing: border-box;
+                                border-left: 10px solid transparent;
+                                border-right: 10px solid transparent;
+                                border-bottom: 10px solid @f60;
+                                position: absolute;
+                                top: -10px;
+                                right: 2px;
+                            }
+                            .zm-dialog-renameError {
+                                //短错误；
+                                width: 84px;
+                                height: 30px;
+                                line-height: 30px;
+                                padding-left: 8px;
+                                background-color: @fdc;
+                                color: @fontColor;
+                                font-size: 12px;
+                                position: absolute;
+                                left: 191px;
+                                top: 46px;
+                                border: 1px solid @f60;
+                                border-radius: 2px;
+                                z-index: 35;
+                            }
+                            .zm-dialog-renameError:before {
+                                content: "";
+                                display: block;
+                                width: 0;
+                                height: 0;
+                                box-sizing: border-box;
+                                border-left: 9px solid transparent;
+                                border-right: 9px solid transparent;
+                                border-bottom: 9px solid @fdc;
+                                position: absolute;
+                                top: -9px;
+                                right: 53px;
+                                z-index: 33;
+                            }
+                            .zm-dialog-renameError:after {
+                                content: "";
+                                display: block;
+                                width: 0;
+                                height: 0;
+                                box-sizing: border-box;
+                                border-left: 10px solid transparent;
+                                border-right: 10px solid transparent;
+                                border-bottom: 10px solid @f60;
+                                position: absolute;
+                                top: -10px;
+                                right: 52px;
+                            }
+                        }
+                        .onlay {
+                            // background-color: #eff6fc;
+                            span {
+                                display: block;
+                            }
+                        }
+                        .wrong {
+                            span {
+                                display: block;
+                            }
+                        }
+                        .onlayclick {
+                            // background-color: #eff6fc; //he
+                            span {
+                                display: block;
+                            }
+                        }
+                        .bgW {
+                            background-color: #fff;
+                        }
+                    }
+                }
+                //选择博客设置;
+                .zm-dialog-check {
+                    width: 286px;
+                    height: 50px;
+                    border-top: 1px solid @gray3;
+                    padding-top: 10px;
+                    box-sizing: border-box;
+                    box-shadow: 0 0 5px @blackOpa2;
+                    border-bottom-left-radius: 6px;
+                    border-bottom-right-radius: 6px;
+                    background: linear-gradient(@white, @gray4);
+                    text-align: center;
+                    cursor: pointer;
+                    .zm-dialog-check-button {
+                        display: inline-block;
+                        width: 100px;
+                        height: 30px;
+                        line-height: 30px;
+                        border-radius: 5px;
+                        outline: none;
+                        border: none;
+                        color: @white;
+                        // background-color: @baseColor;
+                    }
+                }
+                .zm-dialog-check-button:hover {
+                    cursor: pointer;
+                }
+                .zm-dialog-carousel-pageSetBox {
+                    // position: absolute;
+                    position: fixed;
+                    box-shadow: 0 0 5px @gray3;
+                    width: 176px;
+                    left: 305px;
+                    color: #797979;
+                    border-radius: 5px;
+                    > div {
+                        width: 100%;
+                        height: 30px;
+                        box-sizing: border-box;
+                        font-size: 12px;
+                        line-height: 30px;
+                        padding-left: 30px;
+                        background-color: @white;
+                        cursor: pointer;
+                    }
+                    > div:hover {
+                        // background-color: #eff6fc;
+                    }
+                    > div:nth-child(1) {
+                        border-radius: 5px 5px 0 0;
+                    }
+                    > div:last-child {
+                        border-radius: 0 0 5px 5px;
+                    }
+                }
+            }
+        }
+    }
+    //管理产品设置;
+    .zm-dialog-check {
+        width: 286px;
+        height: 50px;
+        border-top: 1px solid @gray3;
+        padding-top: 10px;
+        box-sizing: border-box;
+        box-shadow: 0 0 5px @blackOpa2;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        background: linear-gradient(@white, @gray4);
+        text-align: center;
+        cursor: pointer;
+        .zm-dialog-check-button {
+            display: inline-block;
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+            color: @white;
+            background-color: @gray3;
+        }
+        a {
+            .zm-dialog-check-button {
+                // background-color: @baseColor;
+            }
+        }
+    }
+    .zm-dialog-NewCheck {
+        position: absolute;
+        bottom: 0;
+    }
+    .zm-dialog-check-button:hover {
+        cursor: pointer;
+    }
+    .zm-productS-content {
+        position: relative;
+        border-top: 1px solid #f2f2f2;
+        // display: block !important;
+        //blog管理内容ul,li设置;
+        .zm-product-pageBox {
+            width: 286px;
+            height: 594px;
+            position: relative;
+            top: 10px;
+            .easy-scrollbar__wrap,
+            .easy-scrollbar__wrap--hidden-default {
+                height: 594px;
+            }
+            .zm-dialog-pageList1 {
+                margin: 0;
+                padding: 0;
+                li {
+                    width: 286px;
+                    height: 60px;
+                    line-height: 60px;
+                    list-style: none;
+                    position: relative;
+                    border-bottom: 1px solid #f2f2f2;
+                    cursor: pointer;
+                    color: #797979;
+                    span {
+                        display: none;
+                    }
+                    .zm-index {
+                        position: absolute;
+                        left: 11px;
+                        top: 0px;
+                        font-size: 12px;
+                        font-style: italic;
+                        color: #797979;
+                    }
+                    .zm-dialog-serialNumber {
+                        float: left;
+                        height: 50px;
+                        font-style: italic;
+                        margin-left: 33px;
+                        width: 50px;
+                        margin-top: 5px;
+                        display: block;
+                        background-size: cover;
+                    }
+                    .zm-dialog-Title {
+                        float: left;
+                        height: 50px;
+                        width: 146px;
+                        border-radius: 3px;
+                        cursor: pointer;
+                        // overflow: hidden;
+                        margin: 5px 5px 0 10px !important;
+                        .zm-dialog-pageList-title {
+                            width: 100%;
+                            outline: none;
+                            height: 50px;
+                            line-height: 1.4em !important;
+                            box-sizing: border-box;
+                            // padding: 0 24px 0 6px;
+                            text-overflow: ellipsis;
+                            background-color: transparent;
+                            border: 1px solid transparent;
+                            color: #797979;
+                            resize: none;
+                            margin: 0 !important;
+                            overflow: hidden;
+                            word-break: break-all;
+                            word-wrap: break-word;
+                            font-size: 12px;
+                            // overflow-x:hidden;//水平方向内容溢出时的设置
+                            // overflow-y:hidden;//垂直方向内容溢出时的设置
+                        }
+                        .zm-boxShow {
+                            display: inline-block;
+                            width: 185px;
+                            height: 40px;
+                            background-color: transparent;
+                            position: absolute;
+                            top: 0px;
+                            left: 30px;
+                        }
+                    }
+                    .zm-dialog-Title::before{
+                        content: "";
+                        display: block;
+                        width: 250px;
+                        height: 100%;
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        z-index: 1;
+                    }
+                    .onFocus {
+                        // border: 1px solid @baseColor;
+                        // box-shadow: 0 0 5px @baseColor;
+                    }
+                    .onError {
+                        box-shadow: 0 0 5px @f60;
+                        border: 1px solid @f60;
+                    }
+                    .zm-dialog-eye {
+                        font-size: 12px;
+                        // color: @baseColor;
+                        float: left;
+                        line-height: 60px;
+                    }
+                    .zm-dialog-setting {
+                        // color: @baseColor;
+                        font-size: 18px;
+                        float: left;
+                        line-height: 60px;
+                        margin-left: 7px;
+                    }
+                    .icon-cha2 {
+                        font-size: 18px;
+                    }
+                    .icon-eyeOff {
+                        font-size: 18.66px;
+                        color: @gray3;
+                    }
+                    .icon-duigou1,
+                    .icon-cha2 {
+                        // color: @baseColorLight2;
+                    }
+                    .icon-duigou1:hover,
+                    .icon-cha2:hover {
+                        // color: @baseColor;
+                    }
+                    span.setKey {
+                        // color: @baseColor;
+                    }
+                    .zm-dialog-nameError {
+                        //警告；
+                        position: absolute;
+                        font-size: 12px;
+                        right: 68px;
+                        color: @f60;
+                        top:12px;
+                    }
+                    .zm-dialog-nameErrorText {
+                        //长错误；
+                        width: 223px;
+                        height: 30px;
+                        line-height: 30px;
+                        padding-left: 8px;
+                        background-color: @fdc;
+                        color: @fontColor;
+                        font-size: 12px;
+                        position: absolute;
+                        left: 2px;
+                        top: 60px;
+                        border: 1px solid @f60;
+                        border-radius: 2px;
+                        z-index: 35;
+                        > i {
+                            font-style: normal;
+                            color: #9900cc;
+                        }
+                    }
+                    .zm-dialog-nameErrorText:before {
+                        content: "";
+                        display: block;
+                        width: 0;
+                        height: 0;
+                        box-sizing: border-box;
+                        border-left: 9px solid transparent;
+                        border-right: 9px solid transparent;
+                        border-bottom: 9px solid @fdc;
+                        position: absolute;
+                        top: -9px;
+                        right: 3px;
+                        z-index: 33;
+                    }
+                    .zm-dialog-nameErrorText:after {
+                        content: "";
+                        display: block;
+                        width: 0;
+                        height: 0;
+                        box-sizing: border-box;
+                        border-left: 10px solid transparent;
+                        border-right: 10px solid transparent;
+                        border-bottom: 10px solid @f60;
+                        position: absolute;
+                        top: -10px;
+                        right: 2px;
+                    }
+                    .zm-dialog-renameError {
+                        //短错误；
+                        width: 84px;
+                        height: 30px;
+                        line-height: 30px;
+                        padding-left: 8px;
+                        background-color: @fdc;
+                        color: @fontColor;
+                        font-size: 12px;
+                        position: absolute;
+                        left: 182px;
+                        top: 36px;
+                        border: 1px solid @f60;
+                        border-radius: 2px;
+                        z-index: 35;
+                    }
+                    .zm-dialog-renameError:before {
+                        content: "";
+                        display: block;
+                        width: 0;
+                        height: 0;
+                        box-sizing: border-box;
+                        border-left: 9px solid transparent;
+                        border-right: 9px solid transparent;
+                        border-bottom: 9px solid @fdc;
+                        position: absolute;
+                        top: -9px;
+                        right: 53px;
+                        z-index: 33;
+                    }
+                    .zm-dialog-renameError:after {
+                        content: "";
+                        display: block;
+                        width: 0;
+                        height: 0;
+                        box-sizing: border-box;
+                        border-left: 10px solid transparent;
+                        border-right: 10px solid transparent;
+                        border-bottom: 10px solid @f60;
+                        position: absolute;
+                        top: -10px;
+                        right: 52px;
+                    }
+                }
+                .onlay {
+                    // background-color: #eff6fc;
+                    span {
+                        display: block;
+                    }
+                }
+                .wrong {
+                    span {
+                        display: block;
+                    }
+                }
+                .onlayclick {
+                    // background-color: #eff6fc; //he
+                    span {
+                        display: block;
+                    }
+                }
+                .bgW {
+                    background-color: #fff;
+                }
+            }
+        }
+        //选择博客设置;
+        .zm-dialog-check {
+            width: 286px;
+            height: 50px;
+            border-top: 1px solid @gray3;
+            padding-top: 10px;
+            box-sizing: border-box;
+            box-shadow: 0 0 5px @blackOpa2;
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+            background: linear-gradient(@white, @gray4);
+            text-align: center;
+            cursor: pointer;
+            .zm-dialog-check-button {
+                display: inline-block;
+                width: 100px;
+                height: 30px;
+                line-height: 30px;
+                border-radius: 5px;
+                outline: none;
+                border: none;
+                color: @white;
+                // background-color: @baseColor;
+            }
+        }
+        .zm-dialog-check-button:hover {
+            cursor: pointer;
+        }
+        .zm-dialog-carousel-pageSetBox {
+            // position: absolute;
+            position: fixed;
+            box-shadow: 0 0 5px @gray3;
+            width: 176px;
+            left: 305px;
+            color: #797979;
+            border-radius: 5px;
+            > div {
+                width: 100%;
+                height: 30px;
+                box-sizing: border-box;
+                font-size: 12px;
+                line-height: 30px;
+                padding-left: 30px;
+                background-color: @white;
+                cursor: pointer;
+            }
+            > div:hover {
+                background-color: #eff6fc;
+            }
+            > div:nth-child(1) {
+                border-radius: 5px 5px 0 0;
+            }
+            > div:last-child {
+                border-radius: 0 0 5px 5px;
+            }
+        }
+    }
+}
